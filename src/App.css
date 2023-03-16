@@ -473,18 +473,7 @@ main {
         .extra { grid-row: 10 / 11; }
     }
 /* MOBILE RESPONSIVITY */
-    @media screen and (max-width: 500px) {
-        .container{
-            grid-template-rows: 60px 60px minmax(45px, auto) 75px auto 75px auto 1fr 1fr 1fr auto;
-        }
-
-        .displayed_top_games { width: 300px; }
-        .forum_smal, .l_icon, .a_icon { display: block; }
-        .forum_preview { display: none; }
-
-        .forum, .forum_smal, .sale, .category_display, .product_display { grid-column: 1 / 10;}
-    }
-
+    
     @media print {
         .container { background-color: white; }
         .menu, .menu.responsive, .extra, .row, .prev, .next, .footer, #quick_link, .sale, .toplist { display: none; }
