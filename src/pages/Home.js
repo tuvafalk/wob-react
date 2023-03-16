@@ -1,6 +1,5 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import { Link } from "react-router-dom";
 import Config from "../Config.json";
 
 const TITLE = "Start | " + Config["SITE_TITLE"];
@@ -23,60 +22,7 @@ class Home extends React.Component{
                     <img className="displayed_top_games" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/loveletter.png" alt="1. love letter" />
                     <div className="toplist_desc" onmouseover="mOver1(this)" onmouseout="mOut1(this)">1. Love Letter</div>
                     </div>
-                    <div className="top_games">
-                    <div className="number_text">2 / 10</div>
-                    <img className="displayed_top_games" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/bang.png" alt="2. bang!" />
-                    <div className="toplist_desc" onmouseover="mOver2(this)" onmouseout="mOut2(this)">2. Bang! </div>
-
-                    </div>
-                    <div className="top_games">
-                    <div className="number_text">3 / 10</div>
-                    <img className="displayed_top_games" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/catan.png" alt="3. catan" />
-                    <div className="toplist_desc">3. Catan</div>
-                    </div>
-                    <div className="top_games">
-                    <div className="number_text">4 / 10</div>
-                    <img className="displayed_top_games" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/tapestry.png" alt="4. tapestry" />
-                    <div className="toplist_desc">4. Tapestry</div>
-                    </div>
-                    <div className="top_games">
-                    <div className="number_text">5 / 10</div>
-                    <img className="displayed_top_games" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/7wondersduel.png" alt="5. 7 wonders duel" />
-                    <div className="toplist_desc">5. 7 Wonders Duel</div>
-                    </div>
-                    <div className="top_games">
-                    <div className="number_text">6 / 10</div>
-                    <img className="displayed_top_games" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/onedeckdungeon.png" alt="6. one deck dungeon" />  
-                    <div className="toplist_desc">6. One Deck Dungeon</div>              
-                    </div>
-                    <div className="top_games">
-                    <div className="number_text">7 / 10</div>
-                    <img className="displayed_top_games" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/arkhamhorror.png" alt="7. arkham horror" />
-                    <div className="toplist_desc">7. Arkham Horror</div>
-                    </div>
-                    <div className="top_games">
-                    <div className="number_text">8 / 10</div>
-                    <img className="displayed_top_games" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/houseonthehill.png" alt="8. house on the hill" />
-                    <div className="toplist_desc">8. Betrayal at the House on the Hill</div>
-
-                    </div>
-                    <div className="top_games">
-                    <div className="number_text">9 / 10</div>
-                    <img className="displayed_top_games" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/wingspan.png" alt="9. wingspan" />
-                    <div className="toplist_desc">9. Wingspan</div>
-                    </div>
-                    <div className="top_games">
-                    <div className="number_text">10 / 10</div>
-                    <img className="displayed_top_games" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/thecrew.png" alt="10.the crew" />
-                    <div className="toplist_desc">10. The Crew</div>
-                    </div>
-                    <script>
-                    let slideIndex = 1;
-                    showSlides(slideIndex);
-                    </script>
-                    <a className="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a className="next" onclick="plusSlides(1)">&#10095;</a>
-
+                   
                     <div className="row">
                     <div className="column">
                         <img className="demo" src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/thumbnail_loveletter.png" onclick="currentSlide(1)" alt="Love Letter" />

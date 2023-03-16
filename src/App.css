@@ -211,7 +211,7 @@ main {
         text-align: center;
     }
     /* Hide the images by default */
-    .top_games { display: none; } 
+    .top_games { display: inline; } 
     .displayed_top_games {
         height:225px; 
         width:536.25px;
