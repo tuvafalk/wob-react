@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import { Outlet, useOutlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Config from "../Config.json";
 
 const TITLE = "Produkter | " + Config["SITE_TITLE"];
