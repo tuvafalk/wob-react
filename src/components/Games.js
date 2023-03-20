@@ -14,7 +14,7 @@ class Games extends React.Component {
     }
 
     render(){
-        const {cost} = this.props
+        const {cost} = this.props;
         return(
                 <div className="responsive">
                     <div className="gallery">

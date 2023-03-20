@@ -36,9 +36,12 @@ main {
     }
     #logo img { width: 75%;}
     #quick_link { float: right; padding: 0px; display: inline-flex; }
-    #quick_link a { padding: 10px; }
+    #quick_link a, #quick_link button { padding: 10px; }
     #quick_link img { width: 42px; height: 42px; }
-    #quick_link a:hover,  #quick_link a.active { background-color: rgba(126, 126, 126, 0.3); }
+    #quick_link button:hover, #quick_link a:hover,  #quick_link a.active { background-color: rgba(126, 126, 126, 0.3); cursor: pointer;}
+    #quick_link button { background-color: #0E5839; border: none; }
+    #quick_link button img { padding: 0; margin-bottom: 50px; }
+
 /* MENU */
     .search input[type=text] {
         width: 80px;

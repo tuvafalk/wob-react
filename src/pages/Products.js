@@ -1,7 +1,8 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 import Config from "../Config.json";
+
 
 const TITLE = "Produkter | " + Config["SITE_TITLE"];
 const DESC = "Alla spel, går att sortera på kategorier"
@@ -42,8 +43,7 @@ class Products extends React.Component{
                 <aside className="aside_products">
                     <img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/clouds.jpg" alt="clouds" />
                 </aside>
-                <div className="product_display" id="change">
-                    <Outlet context={{ cost: '1' }} />
+                <div className="product_display" id="change">               
                     <Outlet/>
                     <Outlet/>
                     <Outlet/>
@@ -53,6 +53,16 @@ class Products extends React.Component{
                     <Outlet/>
                     <Outlet/>
                     <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+
 
                 <div className="clearfix"></div>
                 </div>

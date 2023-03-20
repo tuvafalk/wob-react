@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Router>
-        <Header />
+        <Header cart = "Du har inget i varukorgen"/>
         <Routes>
           <Route exact path='/' Component={Home} />
           <Route path='/categories' Component={Categories} />
