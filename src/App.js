@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Router>
-        <Header info = "Här lan du logga in"/>
+        <Header info = "Här kan du logga in"/>
         <Routes>
           <Route exact path='/' Component={Home} />
           <Route path='/categories' Component={Categories} />
