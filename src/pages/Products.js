@@ -1,5 +1,6 @@
 import React from "react";
 import {Helmet} from "react-helmet";
+import { Outlet, useOutlet } from "react-router-dom";
 import Config from "../Config.json";
 
 const TITLE = "Produkter | " + Config["SITE_TITLE"];
@@ -41,240 +42,19 @@ class Products extends React.Component{
                 <aside className="aside_products">
                     <img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/clouds.jpg" alt="clouds" />
                 </aside>
-
                 <div className="product_display" id="change">
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>650kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>370kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>150kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>750kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>50kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>75kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>120kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>769kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>750kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>399kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>200kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>750kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>489kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>750kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>50kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>439kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>43kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>539kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>400kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>444kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>747kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>999kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="responsive">
-                    <div className="gallery">
-                        <a target="_blank" href="src/kat4.png"><img src="https://brave-pebble-0432f1103.2.azurestaticapps.net/src/kat5.png" alt="kategori" /></a>
-                        <div className="desc">
-                        <h2>182kr</h2>
-                        <button className="buy" onclick="this.innerHTML='I korgen!'">Köp</button>
-                        </div>
-                    </div>
-                </div>
+                    <Outlet context={{ cost: '1' }} />
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
+                    <Outlet/>
 
                 <div className="clearfix"></div>
-
                 </div>
             </main>
         );

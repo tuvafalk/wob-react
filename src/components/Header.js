@@ -11,7 +11,7 @@ function resp_menu(){
     }
   
     document.getElementsByClassName("bar").classList.toggle("change");
-  }
+}
 
 class Header extends React.Component{
     render() {
