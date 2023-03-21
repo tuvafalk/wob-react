@@ -18,7 +18,9 @@ function App() {
       <Router>
         <Header info = "Här kan du logga in"/>
         <Routes>
-          <Route exact path='/' Component={Home} />
+          <Route exact path='/' Component={Home}>
+          <Route path="/" Component={Games}/>
+          </Route>
           <Route path='/categories' Component={Categories} />
           <Route path='/login' Component={Login} />
           <Route path='/products' Component={Products}> 

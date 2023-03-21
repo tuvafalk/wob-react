@@ -183,7 +183,7 @@ main {
         grid-row: 4 / 11;
         float: center;
     }
-    .product_display h2 { font-size: 1em; }
+    h2 { font-size: 1em; }
     .product_display { grid-row: 7 / 11; }
     .buy {
         float: right;
@@ -339,13 +339,11 @@ main {
     h2, .info {
         float: left;
         color: #333;
-        font-size: 2em;
+        font-size: 1em;
         padding: 5px;
         margin: 5px;
     }
-    .info { 
-        font-size: 1em; 
-    }
+
     .all_categories {
         text-align: center;
         margin-top: 20px;
